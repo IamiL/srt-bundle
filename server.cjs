@@ -9,7 +9,6 @@ const TELEGRAM_BOT_TOKEN = '7634754756:AAFbVy0Eujw-rzcfeSvi4sAp1QU74znblXA';
 const TELEGRAM_USER_ID_FIRST = -1002888150428; // Первый канал/чат (хранилище)
 const TELEGRAM_REQUESTS_CHAT_ID = -1002673909381; // Второй канал/чат (основной)
 
-
 // Утилиты для логирования
 const getTimestamp = () => new Date().toISOString();
 const getClientInfo = (req) => {
@@ -112,13 +111,15 @@ const getPrerenderedPath = (url) => {
         '/catalog/rotary-crusher': 'catalog/rotary-crusher.html',
         '/catalog/isolators': 'catalog/isolators.html',
         '/catalog/drying-cabinets': 'catalog/drying-cabinets.html',
+        '/policy': 'policy.html',
         '/en': 'en/main.html',
         '/en/cases': 'en/cases.html',
         '/en/manufacturing': 'en/manufacturing.html',
         '/en/catalog': 'en/catalog.html',
         '/en/catalog/rotary-crusher': 'en/catalog/rotary-crusher.html',
         '/en/catalog/isolators': 'en/catalog/isolators.html',
-        '/en/catalog/drying-cabinets': 'en/catalog/drying-cabinets.html'
+        '/en/catalog/drying-cabinets': 'en/catalog/drying-cabinets.html',
+        '/en/policy': 'en/policy.html',
     };
 
     const relativeFilePath = urlToFileMap[cleanUrl];
